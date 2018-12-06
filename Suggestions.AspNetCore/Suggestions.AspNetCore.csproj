@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>Suggestions.AspNetCore</RootNamespace>
+    <AssemblyName>Suggestions.AspNetCore</AssemblyName>
+    <PackageId>Suggestions.AspNetCore</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RestSharp" Version="106.5.4" />
+  </ItemGroup>
+
+</Project>
