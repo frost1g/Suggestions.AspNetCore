@@ -104,7 +104,7 @@ namespace Suggestions.AspNetCore.Tests
         public void SuggestBankStatusTest()
         {
             var query = new BankSuggestQuery("витас");
-            query.status = new PartyStatus[] { PartyStatus.LIQUIDATED };
+            query.status = new PartyStatus[] { PartyStatus.LIQUIDATING };
             var response = api.QueryBank(query);
             Assert.AreEqual("044585398", response.suggestions[0].data.bic);
             Console.WriteLine(string.Join("\n", response.suggestions));

@@ -118,8 +118,7 @@ namespace Suggestions.AspNetCore
             request.AddHeader("Content-Type", contentType.Name);
             request.AddHeader("Accept", contentType.Name);
             request.RequestFormat = contentType.Format;
-            request.XmlSerializer.ContentType = contentType.Name;
-            request.AddBody(query);
+            request.AddJsonBody(query);
             var response = client.Execute<T>(request);
 
             if (response.ErrorException != null)
